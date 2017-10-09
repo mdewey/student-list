@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 html, body, #root, .App {
   height: 100%;
 }
@@ -6,19 +7,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background: #EEEEEE;
+  background: #FFFFFF;
 }
 
 .App {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
 @media(min-width: 40em) {
- .App {
-    width: 40%;
-  } 
+  
 }
 
 .pageContainer {
@@ -26,23 +23,24 @@ body {
 }
 
 .page {
-  background: #FFFFFF;
-  padding: 20px 30px;
+  background: #e9ebec;
   box-shadow: 0 14px 8px 0 rgba(0,0,0,0.08), 0 9px 16px 4px rgba(0,0,0,0.12);
   position: relative;
   top: 50%;
-  transform: translateY(-50%); 
-  height: 400px;
+  /* transform: translateY(-50%);  */
+  height: 100vh;
 }
 
-img {
+
+
+ .img {
   display: block;
   width: 120px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-}
+} 
 
 h2 {
   font-weight: normal;
@@ -91,7 +89,7 @@ p {
 
 .form button:hover {
   opacity: 0.9;
-}
+} 
 
 .SlideIn-appear {
   transform: translateX(30px);
@@ -207,4 +205,35 @@ p {
     -o-transform: translateX(30px);
     -ms-transform: translateX(30px);
     transition: all 0.2s linear;
+}
+
+.nav-student-button{
+  padding: 1em;
+  background-color: #243746;
+  border-radius: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.logo-container
+{
+  background-color: #243746;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom:1em;
+}
+
+.logo{
+  max-height: 8em;
+}
+
+.default-link {
+  color:#243746;
 }
