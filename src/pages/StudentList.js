@@ -1,58 +1,54 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+import StudentItem from '../components/StudentItem'
+
 class Subscribe extends Component {
 
   constructor() {
     super();
     this.state = {
-      students: [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
-      ]
+      students: []
     };
   };
+
+  componentWillMount() {
+    fetch('/data/students.json')
+      .then(resp => resp.json())
+      .then((items) => {
+        this.setState(() => {
+          return {students: items}
+        })
+      })
+  }
 
   render() {
     return (
       <div>
         <nav className="student-header">
-          <div>The Graduates</div>
+          <div>Iron Graduates</div>
           <Link to="/">Home</Link>
         </nav>
         <section className="students">
+          <h3>4th Floor</h3>
           {this
             .state
             .students
+            .filter((s) => {
+              return s.floor === 4
+            })
             .map((student, i) => {
-              return <div className="list-item" key={i}>
-                <img
-                  className="student-picture"
-                  src="http://www.fillmurray.com/200/200"
-                  alt="a"/>
-                <div className="student-info">
-                  <div className="student-name">Alex Smith</div>
-                  <div className="student-project-title">Project title</div>
-                </div>
-                <div className="student-course"><img src="/images/node.svg" alt="node" className="student-course-logo"/></div>
-              </div>
+              return <StudentItem {...student} key={i}></StudentItem>
+            })}
+          <h3>5th Floor</h3>
+          {this
+            .state
+            .students
+            .filter((s) => {
+              return s.floor === 5
+            })
+            .map((student, i) => {
+              return <StudentItem {...student} key={i}></StudentItem>
             })}
         </section>
       </div>
