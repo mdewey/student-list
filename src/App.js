@@ -14,7 +14,6 @@ class App extends Component {
         <div className="App">
           <Route path="/" exact component={PageShell(Home)}></Route>
           <Route path="/students" exact component={PageShell(StudentList)}></Route>
-          <Route path="/students/:name" exact component={PageShell(StudentDetail)}></Route>
         </div>
       </div>
     );
