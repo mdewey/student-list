@@ -13,16 +13,16 @@ class StudentItem extends Component {
         console.log(focus)
         if (focus.indexOf("net") >= 0)
         {
-            return "csharp.svg"
+            return "dot-net"
         }
         else if (focus.indexOf("ruby") >=0){
-            return "ruby.png"
+            return "rails"
         }
         else if (focus.indexOf("node")>=0){
-            return "node.svg"
+            return "nodejs"
         }
         else if (focus.indexOf("front")>=0){
-            return "react.svg"
+            return "react"
         }
 
     }
@@ -35,7 +35,7 @@ class StudentItem extends Component {
                     <div className="student-name">{this.state.student.name}</div>
                     <div className="student-project-title">{this.state.student.appName}</div>
                 </div>
-                <div className="student-course"><img src={"/images/" + this.getFocusImge(this.state.student.focus)} alt="node" className="student-course-logo"/></div>
+                <div className="student-course"><i className={"devicon-"+ this.getFocusImge(this.state.student.focus)+"-plain-wordmark colored student-course-logo"}></i></div>
             </div>
         )
     }

@@ -284,8 +284,7 @@ p {
 
 }
 .student-course-logo{
-  height: 4em;
-  border-radius: 3em;
+  font-size: 3em;
 }
 .student-project-name{
 
@@ -311,3 +310,4 @@ nav > a{
   align-items: center;
   color:white;
 }
+
