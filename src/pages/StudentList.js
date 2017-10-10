@@ -22,6 +22,8 @@ class Subscribe extends Component {
       })
   }
 
+ 
+
   render() {
     return (
       <div>

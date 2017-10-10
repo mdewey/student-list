@@ -257,9 +257,9 @@ p {
 
 .students h3{
   padding: 0.5em 0 0.5em 1em;
-  width: 100%;
+  width: 90%;
   border-bottom: 1px solid #243746;
-  color:#243746
+  color:#243746;
 }
 
 .students{
@@ -311,3 +311,35 @@ nav > a{
   color:white;
 }
 
+
+
+.example-enter {
+  opacity: 0.01;
+  width: 0px;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  width: 100px;
+  transition: 700ms;
+}
+
+.example-leave {
+  opacity: 1;
+  width: 100px;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  width: 0px;
+  transition: 700ms;
+}
+
+.list-item.selected{
+ background-color: #30C0CD;
+ color:white;
+ margin:0.5em;
+ -webkit-box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
+ -moz-box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
+ box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
+}
