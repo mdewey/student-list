@@ -313,33 +313,80 @@ nav > a{
 
 
 
-.example-enter {
+/* .example-enter {
   opacity: 0.01;
   width: 0px;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
-  width: 100px;
   transition: 700ms;
 }
 
 .example-leave {
   opacity: 1;
-  width: 100px;
-}
+ }
 
 .example-leave.example-leave-active {
   opacity: 0.01;
   width: 0px;
   transition: 700ms;
-}
+} */
 
 .list-item.selected{
  background-color: #30C0CD;
  color:white;
- margin:0.5em;
- -webkit-box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
- -moz-box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
- box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
+ margin:0;
+ box-shadow: none;
+}
+
+.student-project-container{
+  background-color: white;
+}
+
+.student-github .devicon-github-plain{
+  padding-right: 0.5em;
+}
+
+.student-project-container header{
+  padding: 1em 0em 0em 1em ;
+  font-style: italic;
+  color: #929ba2;
+}
+
+
+.student-project-container section{
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.student-project-container section img{
+  padding-left:1em;
+  padding-right:1em;
+  border-radius: 0;
+}
+
+.selected-student{
+  -webkit-box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
+  -moz-box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
+  box-shadow: 16px 20px 30px -7px rgba(146,155,162,1);
+  margin:0.5em
+}
+
+.student-nav{
+  height: 3em;
+  display: flex;
+justify-content: flex-end; 
+align-items: center;
+margin-right: 2em;
+font-size: 1.1em;
+}
+
+.more-info-link{
+ color:#30C0CD;
+ 
 }
