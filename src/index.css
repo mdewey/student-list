@@ -214,6 +214,8 @@ p {
   border-radius: 1em;
   color: white;
   text-decoration: none;  
+  width: 75%;
+  text-align: center;
 }
 
 .home-container{
@@ -345,7 +347,7 @@ nav > a{
 }
 
 .student-github .devicon-github-plain{
-  padding-right: 0.5em;
+  padding-right: 0.25em;
 }
 
 .student-project-container header{
