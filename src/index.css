@@ -283,8 +283,9 @@ p {
 }
 
 .student-course{
-
+  
 }
+
 .student-course-logo{
   font-size: 3em;
 }
@@ -390,5 +391,57 @@ font-size: 1.1em;
 
 .more-info-link{
  color:#30C0CD;
- 
 }
+
+.profile-student-image{
+  width: 8em;
+  padding: 1em;
+  height: 8em;
+  border-radius: 5em;
+}
+
+.student-details{
+  display: flex;
+}
+
+.student-profile{
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  background-color: white;
+  margin-top: 0.25em;
+}
+
+.profile-student-name{
+  font-size:1.5em;
+  padding:1em;
+}
+
+
+.profile-header{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.contact-info header{
+  font-size:1.25em;
+  font-weight: bold;
+  padding:1em;
+}
+.contact-info {
+  background-color: white;
+  margin-top: 0.25em;
+}
+
+.mini-header{
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.contact-info div{
+  padding:0.5em;
+}
+

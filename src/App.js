@@ -5,7 +5,7 @@ import PageShell from './components/PageShell'
 
 import Home from './pages/Home'
 import StudentList from './pages/StudentList'
-import StudentDetail from './pages/StudentList'
+import StudentDetail from './pages/StudentDetail'
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
       <div>
         <div className="App">
           <Route path="/" exact component={PageShell(Home)}></Route>
+          <Route path="/students/:github" exact component={PageShell(StudentDetail)}></Route>
           <Route path="/students" exact component={PageShell(StudentList)}></Route>
         </div>
       </div>

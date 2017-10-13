@@ -72,7 +72,7 @@ class StudentItem extends Component {
                             </section>
                         </div>
                         <nav className="student-nav">
-                            <Link to={{pathName:"/students/" + this.state.student.github}} className="more-info-link">MORE</Link>
+                            <Link to={{pathname:"/students/"+this.state.student.github}} className="more-info-link">MORE</Link>
                         </nav>
                     </ReactCSSTransitionGroup>
                 </div>
