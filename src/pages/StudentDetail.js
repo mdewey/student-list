@@ -1,12 +1,18 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 
+import api from '../components/JsonData'
+
 class Subscribe extends Component {
 
     constructor(props) {
         super();
         this.state = {
-            github: props.match.params.github.trim()
+            github: props
+                .match
+                .params
+                .github
+                .trim()
         };
     };
 
@@ -26,14 +32,13 @@ class Subscribe extends Component {
     }
 
     componentWillMount() {
-        fetch('/data/students.json')
-            .then(resp => resp.json())
-            .then((items) => {
-                const student = items.filter(st => st.github.trim() === this.state.github)[0]
-                this.setState(() => {
-                    return {student}
-                })
+        api.getData((items) => {
+            const student = items.filter(st => st.github.trim() === this.state.github)[0]
+            this.setState(() => {
+                return {student}
             })
+        })
+
     }
 
     render() {
@@ -66,14 +71,34 @@ class Subscribe extends Component {
                         </section>
                         <section className="contact-info">
                             <header>
-                                Learn more about {this.state.student.name.substr(0, this.state.student.name.indexOf(" "))}...
+                                Learn more about {this
+                                    .state
+                                    .student
+                                    .name
+                                    .substr(0, this.state.student.name.indexOf(" "))}...
                             </header>
-                                <Link to={this.state.student.portfolio} target="_blank"  className="btn nav-student-button ">Portfolio</Link>
-                                
-                                <Link to={"https://www.github.com/" + this.state.student.github.trim()} target="_blank"  className="btn nav-student-button "> Github </Link>
-    
-                                <Link to={this.state.student.linkeding} target="_blank" className="btn nav-student-button "> LinkedIn</Link>
-    
+                            <Link
+                                to={this.state.student.portfolio}
+                                target="_blank"
+                                className="btn nav-student-button ">Portfolio</Link>
+
+                            <Link
+                                to={"https://www.github.com/" + this
+                                .state
+                                .student
+                                .github
+                                .trim()}
+                                target="_blank"
+                                className="btn nav-student-button ">
+                                Github
+                            </Link>
+
+                            <Link
+                                to={this.state.student.linkeding}
+                                target="_blank"
+                                className="btn nav-student-button ">
+                                LinkedIn</Link>
+
                         </section>
                     </section>
                 </div>

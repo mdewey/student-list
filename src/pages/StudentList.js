@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 import StudentItem from '../components/StudentItem'
 
+import api from '../components/JsonData'
+
 class Subscribe extends Component {
 
   constructor() {
@@ -13,16 +15,12 @@ class Subscribe extends Component {
   };
 
   componentWillMount() {
-    fetch('/data/students.json')
-      .then(resp => resp.json())
-      .then((items) => {
-        this.setState(() => {
-          return {students: items}
-        })
+    api.getData((items) => {
+      this.setState(() => {
+        return {students: items}
       })
+    })
   }
-
- 
 
   render() {
     return (
@@ -42,7 +40,7 @@ class Subscribe extends Component {
             .map((student, i) => {
               return <StudentItem {...student} key={i}></StudentItem>
             })}
-            <h3>Middle Room</h3>
+          <h3>Middle Room</h3>
           {this
             .state
             .students
@@ -52,7 +50,7 @@ class Subscribe extends Component {
             .map((student, i) => {
               return <StudentItem {...student} key={i}></StudentItem>
             })}
-            <h3>Right Room</h3>
+          <h3>Right Room</h3>
           {this
             .state
             .students
