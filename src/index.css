@@ -347,6 +347,9 @@ nav > a{
 
 .student-project-container{
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .student-github .devicon-github-plain{
