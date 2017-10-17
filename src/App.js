@@ -12,7 +12,7 @@ import api from './components/JsonData'
 class App extends Component {
   constructor() {
     super();
-   // api.reset();
+    api.reset();
   };
   render() {
     return (
