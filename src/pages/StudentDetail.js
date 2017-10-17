@@ -66,10 +66,12 @@ class Subscribe extends Component {
                         </section>
                         <section className="contact-info">
                             <header>
-                                Check them out
+                                Learn more about {this.state.student.name.substr(0, this.state.student.name.indexOf(" "))}...
                             </header>
                             <div>
-                                <span className="mini-header">Portfolio</span><br/>{this.state.student.portfolio}
+                                <span className="mini-header">Portfolio</span><br/>
+                                <Link to={this.state.student.portfolio} target="_blank"> {this.state.student.portfolio} </Link>
+                                
                             </div>
                             <div>
                                 <span className="mini-header">Github account</span>

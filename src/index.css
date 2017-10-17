@@ -394,9 +394,9 @@ font-size: 1.1em;
 }
 
 .profile-student-image{
-  width: 8em;
+  /* width: 8em; */
   padding: 1em;
-  height: 8em;
+  height: 7em;
   border-radius: 5em;
 }
 
@@ -424,6 +424,7 @@ font-size: 1.1em;
   align-content: center;
   align-items: center;
   background-color: white;
+  width: 100%;
 }
 
 .contact-info header{
