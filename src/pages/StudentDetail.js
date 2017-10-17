@@ -6,7 +6,7 @@ class Subscribe extends Component {
     constructor(props) {
         super();
         this.state = {
-            github: props.match.params.github
+            github: props.match.params.github.trim()
         };
     };
 
@@ -29,7 +29,7 @@ class Subscribe extends Component {
         fetch('/data/students.json')
             .then(resp => resp.json())
             .then((items) => {
-                const student = items.filter(st => st.github === this.state.github)[0]
+                const student = items.filter(st => st.github.trim() === this.state.github)[0]
                 this.setState(() => {
                     return {student}
                 })
@@ -42,7 +42,7 @@ class Subscribe extends Component {
             return (
                 <div>
                     <nav className="student-header">
-                        <div>Iron Graduates</div>
+                        <div>Iron Grads</div>
                         <Link to="/students">BACK</Link>
                     </nav>
                     <section className="students">
@@ -68,32 +68,13 @@ class Subscribe extends Component {
                             <header>
                                 Learn more about {this.state.student.name.substr(0, this.state.student.name.indexOf(" "))}...
                             </header>
-                            <div>
-                                <span className="mini-header">Portfolio</span><br/>
-                                <Link to={this.state.student.portfolio} target="_blank"> {this.state.student.portfolio} </Link>
+                                <Link to={this.state.student.portfolio} target="_blank"  className="btn nav-student-button ">Portfolio</Link>
                                 
-                            </div>
-                            <div>
-                                <span className="mini-header">Github account</span>
-                                <br/>{this.state.student.github}
-                            </div>
-                            <div>
-                                <span className="mini-header">LinkedIn</span>
-                                <br/>{this.state.student.linkeding}
-                            </div>
-                            <div>
-                                <span className="mini-header">Email</span><br/>
-                                {this.state.student.email}
-                            </div>
+                                <Link to={"https://www.github.com/" + this.state.student.github.trim()} target="_blank"  className="btn nav-student-button "> Github </Link>
+    
+                                <Link to={this.state.student.linkeding} target="_blank" className="btn nav-student-button "> LinkedIn</Link>
+    
                         </section>
-                        {/* <section className="student-program">
-                             <div>
-                                    Demoing on {this.state.student.floor}th floor
-                                </div>
-
-                            <div></div>
-                        </section> */}
-
                     </section>
                 </div>
             )
@@ -101,7 +82,7 @@ class Subscribe extends Component {
             return (
                 <div>
                     <nav className="student-header">
-                        <div>Iron Graduates</div>
+                        <div>Iron Grads</div>
                         <Link to="/students">BACK</Link>
                     </nav>
                     <section className="students">

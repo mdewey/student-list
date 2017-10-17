@@ -28,26 +28,36 @@ class Subscribe extends Component {
     return (
       <div>
         <nav className="student-header">
-          <div>Iron Graduates</div>
+          <div>Iron Grads</div>
           <Link to="/">Home</Link>
         </nav>
         <section className="students">
-          <h3>4th Floor</h3>
+          <h3>Left Room</h3>
           {this
             .state
             .students
             .filter((s) => {
-              return s.floor === 4
+              return s.floor === 1
             })
             .map((student, i) => {
               return <StudentItem {...student} key={i}></StudentItem>
             })}
-          <h3>5th Floor</h3>
+            <h3>Middle Room</h3>
           {this
             .state
             .students
             .filter((s) => {
-              return s.floor === 5
+              return s.floor === 2
+            })
+            .map((student, i) => {
+              return <StudentItem {...student} key={i}></StudentItem>
+            })}
+            <h3>Right Room</h3>
+          {this
+            .state
+            .students
+            .filter((s) => {
+              return s.floor === 3
             })
             .map((student, i) => {
               return <StudentItem {...student} key={i}></StudentItem>

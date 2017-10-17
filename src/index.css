@@ -214,8 +214,10 @@ p {
   border-radius: 1em;
   color: white;
   text-decoration: none;  
-  width: 75%;
   text-align: center;
+  margin: 1em;
+  height: 2em;
+  line-height: 2em;
 }
 
 .home-container{
@@ -283,7 +285,7 @@ p {
 }
 
 .student-course{
-  
+margin: 1em;    
 }
 
 .student-course-logo{
@@ -435,6 +437,8 @@ font-size: 1.1em;
 .contact-info {
   background-color: white;
   margin-top: 0.25em;
+  display: flex;
+  flex-direction: column;
 }
 
 .mini-header{
@@ -446,3 +450,6 @@ font-size: 1.1em;
   padding:0.5em;
 }
 
+.full-width{
+  width: 100%;
+}

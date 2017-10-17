@@ -1,6 +1,6 @@
 [
     {
-      "floor": 4,
+      "floor": 1,
       "profileImage": "https://pbs.twimg.com/profile_images/690591574451838976/1us39GqU.jpg",
       "name": "Toni Warren",
       "focus": "Back End Engineering - Ruby on Rails",
@@ -14,7 +14,7 @@
       "appLink": ""
     },
     {
-      "floor": 4,
+      "floor": 3,
       "profileImage": "https://i.imgur.com/SQSHQ4J.jpg",
       "name": "Cody Clark",
       "focus": "Front End Engineer - React",
@@ -28,7 +28,7 @@
       "appLink": ""
     },
     {
-      "floor": 4,
+      "floor": 2,
       "profileImage": "https://avatars0.githubusercontent.com/u/23278639?v=4&s=460",
       "name": "Garrett Settles",
       "focus": "Front End Engineer",
@@ -42,7 +42,7 @@
       "appLink": ""
     },
     {
-      "floor": 4,
+      "floor": 3,
       "profileImage": " https://www.github.com/BreeJax/portfolio_in_Jade/blob/master/public/images/pic-of-Bree.jpg?raw=true",
       "name": "Bree Jackson",
       "focus": "Back End Engineering - Node.js",
@@ -56,7 +56,7 @@
       "appLink": ""
     },
     {
-      "floor": 4,
+      "floor": 1,
       "profileImage": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkjAAAAJDFmYmQ2NDNlLTExZjYtNDhmZi04MTUwLWM0ZjEyOTNiZDhlYw.jpg",
       "name": "Connor Bentley",
       "focus": "Front End Engineer",
@@ -70,7 +70,7 @@
       "appLink": ""
     },
     {
-      "floor": 4,
+      "floor": 1,
       "profileImage": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAZfAAAAJDJhN2Y2ODMzLTY3YzAtNDBiNC1iNThhLTcyNmZjNTBiMWU4Ng.jpg",
       "name": "Jeremiah Diboll",
       "focus": "Back End Engineer - C#/.NET",
@@ -84,7 +84,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 2,
       "profileImage": "https://avatars3.githubusercontent.com/u/23741323?v=4&s=460",
       "name": "Justin Linn",
       "focus": "Front End Engineer - React",
@@ -98,7 +98,7 @@
       "appLink": ""
     },
     {
-      "floor": 4,
+      "floor": 1,
       "profileImage": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/4/000/152/03b/1b4d946.jpg",
       "name": "Jonathan Schultz",
       "focus": "Back End Engineer - C#/.NET",
@@ -112,7 +112,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 1,
       "profileImage": "https://zacharymorel.github.io/img/26075258.jpeg",
       "name": "Zach Morel",
       "focus": "Back End Engineer - Node.js",
@@ -126,7 +126,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 1,
       "profileImage": "https://avatars0.githubusercontent.com/u/14189801?v=4&s=400&u=da68b341092542e7bdcb11e4a3fee6c3c639bd27",
       "name": "Keri Spencer",
       "focus": "Front End Engineer - React",
@@ -140,7 +140,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 3,
       "profileImage": "https://avatars0.githubusercontent.com/u/29711296?v=4&s=460",
       "name": "Maria Laura Tarabillo",
       "focus": "Back End Engineer - Ruby on Rails",
@@ -154,7 +154,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 2,
       "profileImage": "https://avatars1.githubusercontent.com/u/29668537?v=4&s=400&u=f86b6b0db3008ff94bb301c0104c99953ddc7922",
       "name": "Greg Garville Jr",
       "focus": "Back End Engineer - Ruby on Rails",
@@ -168,7 +168,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 1,
       "profileImage": "https://avatars2.githubusercontent.com/u/6165421?v=4&s=400&u=3708e8e0af369723aaac7030fc5fb8f1eb0fcc29",
       "name": "Brad Conley",
       "focus": "Front End Engineer - React",
@@ -182,7 +182,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 2,
       "profileImage": "https://pbs.twimg.com/profile_images/894274795256328193/xHOuZm04_400x400.jpg",
       "name": "Yana Wilkins",
       "focus": "Back End Engineer - C#/.NET",
@@ -196,7 +196,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 3,
       "profileImage": "https://avatars3.githubusercontent.com/u/29178824?v=4&s=400&u=959a5da8ee48ccc6b7b9ea68a09fa4d450cdbf50",
       "name": "Brandyn Sullins",
       "focus": "Back End Engineer - C#/.NET",
@@ -211,7 +211,7 @@
       "appDesc":"Put simply our health tracker helps you keep track of yourself, which in turn helps medical practitioners take better care of you. Its a small site that encourages you to log in once a day and in 30 seconds you jot down your mood, food intake, and behaviors. This way once you go to any sort of doctor you can print out these reports and they'll have an accurate timeline about you that will aid them in caring for you."
     },
     {
-      "floor": 5,
+      "floor": 2,
       "profileImage": "https://avatars2.githubusercontent.com/u/29587259?v=4&s=400&u=22694f4f4366c5c985ac2084450153a0d586c881",
       "name": "Julius Bzozowski",
       "focus": "Back End Engineering - Ruby on Rails",
@@ -225,7 +225,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 1,
       "profileImage": "https://avatars1.githubusercontent.com/u/17601249?v=4&s=460",
       "name": "Javi Jasso",
       "focus": "Front End Engineering - React",
@@ -239,7 +239,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 2,
       "profileImage": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAAzcAAAAJGY5NGRjOTUwLWViOWYtNDc0NS05NjkyLWI1ODI3Y2ZkY2M5OA.jpg",
       "name": "Taylor",
       "focus": "Front End Engineering - React",
@@ -253,7 +253,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 3,
       "profileImage": "https://i.imgur.com/D0JjwnB.jpg",
       "name": "Miguel Brito",
       "focus": "Front End Engineering - React",
@@ -267,7 +267,7 @@
       "appLink": ""
     },
     {
-      "floor": "",
+      "floor": 3,
       "profileImage": "",
       "name": "Shaun",
       "focus": "",
@@ -281,7 +281,7 @@
       "appLink": ""
     },
     {
-      "floor": 5,
+      "floor": 3,
       "profileImage": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAIQAAAAJGIxZDNiMmQ1LTRkOWEtNDhlMi04MGNiLWJhMTZiNzZjNzc5NA.jpg",
       "name": "Robby",
       "focus": "Back End Engineering - C#/.Net",

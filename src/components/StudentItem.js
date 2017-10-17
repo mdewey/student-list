@@ -50,7 +50,7 @@ class StudentItem extends Component {
                             <img className="student-picture" src={this.state.student.profileImage} alt="a"/>
                             <div className="student-info">
                                 <div className="student-name">{this.state.student.name}</div>
-                                <div className="student-github"><i className="devicon-github-plain"></i>{this.state.student.github}</div>
+                                <div className="student-github"><i className="devicon-github-plain"></i>{this.state.student.github.trim()}</div>
                        
                             </div>
                             <div className="student-course">
@@ -72,7 +72,7 @@ class StudentItem extends Component {
                             </section>
                         </div>
                         <nav className="student-nav">
-                            <Link to={{pathname:"/students/"+this.state.student.github}} className="more-info-link">MORE</Link>
+                            <Link to={{pathname:"/students/"+this.state.student.github.trim()}} className="more-info-link">MORE</Link>
                         </nav>
                     </ReactCSSTransitionGroup>
                 </div>
@@ -92,7 +92,7 @@ class StudentItem extends Component {
                             alt={this.state.student.name}/>
                         <div className="student-info">
                             <div className="student-name">{this.state.student.name}</div>
-                            <div className="student-github"><i className="devicon-github-plain colored"></i>{this.state.student.github}</div>
+                            <div className="student-github"><i className="devicon-github-plain colored"></i>{this.state.student.github.trim()}</div>
                        
                         </div>
                         < div className="student-course">
