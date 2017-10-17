@@ -57,7 +57,11 @@ class Subscribe extends Component {
                                     src={this.state.student.profileImage}
                                     alt={this.state.student.name}
                                     className="profile-student-image"/>
-                                <div className="profile-student-name">{this.state.student.name}</div>
+                                <section>
+                                    <div className="profile-student-name">{this.state.student.name}</div>
+                                    
+                                    <div className="profile-student-email">{this.state.student.email}</div>
+                                </section>
                             </div>
                         </section>
                         <section className="student-profile">
