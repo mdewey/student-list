@@ -61,14 +61,9 @@ class StudentItem extends Component {
                         <div className="student-project-container">
                             <header>Project</header>
                             <section>
-                                <img
-                                    className="student-picture"
-                                    src="http://www.fillmurray.com/200/200"
-                                    alt={this.state.student.appName}/>
                                 <span>{this.state.student.appName}</span>
                             </section>
                             <section>
-                            Cras pretium nisl a tellus ultrices, nec porta arcu tincidunt. Nulla et dui scelerisque, fermentum ex nec, dictum leo. Nunc turpis lacus, sagittis vel orci ac, suscipit vehicula ligula. Proin vitae maximus lorem, eu hendrerit leo ligula. Vestibulum fermentum sagittis lacus, in elementum arcu scelerisque et.
                             </section>
                         </div>
                         <nav className="student-nav">

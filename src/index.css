@@ -363,8 +363,9 @@ nav > a{
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
+
 
 .student-github .devicon-github-plain{
   padding-right: 0.25em;
