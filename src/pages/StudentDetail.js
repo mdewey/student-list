@@ -47,8 +47,8 @@ class Subscribe extends Component {
             return (
                 <div>
                     <nav className="student-header">
-                        <div>Iron Grads</div>
                         <Link to="/students">BACK</Link>
+                        <div>Iron Grads</div>
                     </nav>
                     <section className="students">
                         <section className="student-details">

@@ -26,10 +26,10 @@ class Subscribe extends Component {
     return (
       <div>
         <nav className="student-header">
+          <img src="/images/TIY-logo-white-png.png" alt="Welcome to The Iron Yard." className="logo"/>
           <div>Iron Grads</div>
         </nav>
         <header className="welcome-hero">
-            <img src="/images/TIY-logo-gray-png.png" alt="Welcome to The Iron Yard." className="logo"/>
             Welcome to Cohort 8 Demo Day. 
         </header>
         <section className="students">

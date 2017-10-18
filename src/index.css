@@ -243,7 +243,7 @@ p {
 }
 
 .logo{
-  max-height: 4em;
+  max-height: 2.5em;
 }
 
 .default-link {
@@ -267,7 +267,7 @@ p {
 }
 
 .students h3{
-  padding: 0.5em 0 0.5em 1em;
+  padding: 0.25em 0em 0.75em 2em;
   width: 90%;
   border-bottom: 1px solid #243746;
   color:#243746;
@@ -314,7 +314,6 @@ nav > a{
   background-color: #243746;
   text-align: center;
   display: flex;
-  flex-direction: row-reverse;
   height: 3em;
   justify-content: space-between;
   padding-left:1em;
@@ -327,6 +326,8 @@ nav > a{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 1.25em;
+  padding-top: 1em;
 }
 
 
