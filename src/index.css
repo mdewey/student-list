@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+
+
+
 html, body, #root, .App {
   height: 100%;
   background: #e9ebec;
@@ -15,6 +18,10 @@ body {
   
 }
 
+
+*{
+  font-family: "ff-tisa-sans-web", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+}
 @media(min-width: 40em) {
   
 }
@@ -236,7 +243,7 @@ p {
 }
 
 .logo{
-  max-height: 8em;
+  max-height: 4em;
 }
 
 .default-link {
@@ -314,6 +321,12 @@ nav > a{
   padding-right:1em;
   align-items: center;
   color:white;
+}
+
+.welcome-hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 
