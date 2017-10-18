@@ -50,8 +50,13 @@ class StudentItem extends Component {
                             <img className="student-picture" src={this.state.student.profileImage} alt="a"/>
                             <div className="student-info">
                                 <div className="student-name">{this.state.student.name}</div>
-                                <div className="student-github"><i className="devicon-github-plain"></i>{this.state.student.github.trim()}</div>
-                       
+                                <div className="student-github">
+                                    <i className="devicon-github-plain"></i>{this
+                                        .state
+                                        .student
+                                        .github
+                                        .trim()}</div>
+
                             </div>
                             <div className="student-course">
                                 <i
@@ -62,12 +67,21 @@ class StudentItem extends Component {
                             <header>Project</header>
                             <section>
                                 <span>{this.state.student.appName}</span>
-                            </section>
-                            <section>
+                              
                             </section>
                         </div>
                         <nav className="student-nav">
-                            <Link to={{pathname:"/students/"+this.state.student.github.trim()}} className="more-info-link">MORE</Link>
+                        <a href={this.state.student.appLink} className="more-info-link" target="_blank"> VIEW APP</a>
+                        &nbsp;&nbsp;
+                        &nbsp;                            <Link
+                                to={{
+                                pathname: "/students/" + this
+                                    .state
+                                    .student
+                                    .github
+                                    .trim()
+                            }}
+                                className="more-info-link">MORE</Link>
                         </nav>
                     </ReactCSSTransitionGroup>
                 </div>
@@ -87,8 +101,13 @@ class StudentItem extends Component {
                             alt={this.state.student.name}/>
                         <div className="student-info">
                             <div className="student-name">{this.state.student.name}</div>
-                            <div className="student-github"><i className="devicon-github-plain colored"></i>{this.state.student.github.trim()}</div>
-                       
+                            <div className="student-github">
+                                <i className="devicon-github-plain colored"></i>{this
+                                    .state
+                                    .student
+                                    .github
+                                    .trim()}</div>
+
                         </div>
                         < div className="student-course">
                             <i
