@@ -477,3 +477,34 @@ font-size: 1.1em;
 .full-width{
   width: 100%;
 }
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  font-size: 1.25em;
+  background-color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 16px 18px 0 rgba(0,0,0,0.13), 0 4px 6px 0 rgba(0,0,0,0.16);
+}
+
+footer a {
+  color:#243746
+}
+
+.about-cards{
+  margin-top: 1.25em;
+}
+.about-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+  font-size: 1em;
+  background-color: white;
+  margin-bottom: 1em;
+  box-shadow: 0 16px 18px 0 rgba(0,0,0,0.13), 0 4px 6px 0 rgba(0,0,0,0.16);
+}

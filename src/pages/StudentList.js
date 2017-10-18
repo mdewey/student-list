@@ -64,6 +64,9 @@ class Subscribe extends Component {
               return <StudentItem {...student} key={i}></StudentItem>
             })}
         </section>
+        <footer>
+            <Link to="/about">What is all about?</Link>
+        </footer>
       </div>
     )
   }
